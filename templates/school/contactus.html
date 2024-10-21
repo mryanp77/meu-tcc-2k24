@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Projeto Bons Estudos</title>
+
+
+</head>
+
+<body>
+
+  {% include "school/navbar.html" %}
+  <main>
+  <br><br>
+
+  <center>
+    <h3 class='alert alert-success'>Dê um feedback construtivo!</h3>
+
+    <form method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Enviar mensagem" class='btn btn-primary btn-lg'>
+      </div>
+    </form>
+  </center>
+</main>
+  {% include "school/footer.html" %}
+</body>
+
+</html>

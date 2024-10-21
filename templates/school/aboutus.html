@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ProjetoBonsEstudos</title>
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "school/navbar.html" %}
+<main>
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">Sobre Nós</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4">Olá!</h1>
+    <p class="lead">Nosso projeto visa facilitar o gerenciamento eficiente das redes de ensino, oferecendo ferramentas que simplificam a administração escolar
+      e melhoram a interação entre professores, alunos e administradores. A plataforma oferece recursos online acessíveis, suporte profissional e orientação
+      personalizada, garantindo que todos possam otimizar suas atividades educacionais de forma prática e organizada.</p>
+    <hr class="my-4">
+    <p>Explore nosso website</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">INÍCIO</a>
+    </p>
+  </div>
+</main>
+  {% include "school/footer.html" %}
+</body>
+
+</html>

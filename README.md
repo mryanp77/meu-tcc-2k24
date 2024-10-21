@@ -38,3 +38,29 @@ Primeiro, o administrador se registrará para criar uma conta. Após o login, el
 ## ALGUNS RECURSOS QUE DEIXAM O SITE MAIS COMPLICADO...
 - Na página de atualização de professores/alunos, a senha deve ser atualizada.
 - Qualquer pessoa pode se tornar um administrador.
+
+
+# TUTORIAL GITHUB | ATUALIZAR ARQUIVOS:
+## Navegue até o diretório do projeto;
+
+## Verifique o status dos arquivos:
+- git status
+
+## Adicione os arquivos que deseja atualizar:
+- git add .
+
+## Faça um commit das suas mudanças:
+- git commit -m "Sua mensagem de commit aqui"
+
+## Atualize seu repositório remoto:
+- git push origin main
+
+## Se você tiver alterações no repositório remoto que não estão na sua máquina local, pode ser necessário fazer um pull antes:
+- git pull origin main
+
+
+# TUTORIAL GITHUB | BAIXAR ARQUIVOS:
+## Navegue até o diretório onde você quer clonar o repositório;
+
+## Clone o repositório:
+- git clone https://github.com/mryanp77/meu-tcc-2k24.git

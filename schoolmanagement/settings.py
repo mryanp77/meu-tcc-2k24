@@ -109,5 +109,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'michaelpaisrg16@gmail.com'
-EMAIL_HOST_PASSWORD = 'lest tqct qxyy zaur' 
+EMAIL_HOST_PASSWORD = 'lsqo ekfv hnhd ycit' 
 EMAIL_RECEIVING_USER = ['michaelpaisrg16@gmail.com'] 

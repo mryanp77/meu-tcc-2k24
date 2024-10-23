@@ -41,28 +41,30 @@
 
         <table class="table table-hover" id="dev-table">
           <thead>
+
             <tr>
               <th>Nome do Aluno</th>
               <th>Presente/Ausente</th>
             </tr>
           </thead>
 
+
           {% csrf_token %}
-          <tbody>
-            {% for student, present_form in student_present_forms %}
-            <tr>
-              <td>{{ student.get_name }}</td>
-              <td>
-                {% render_field present_form.present_status class="form-control" %}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
+          {%for student in students%}
+          <tr>
+            <td>{{student.get_name}}</td>
+            <td>{{aform.present_status}}</td>
+          </tr>
+          {%endfor%}
+
+
+
         </table>
-        
         {% render_field aform.date class="form-control" placeholder="Informe a data no modelo mm/dd/aaaa" %}
-        
-        <input type="submit" style="margin-left: 200px; margin-top: 20px; margin-bottom: 20px; background-color: #ffec00;" name="submit" value="Enviar">
+        <input type="submit" style="margin-left: 200px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;    background-color: #ffec00;" name="submit" value="Enviar">
       </div>
     </div>
   </div>
